@@ -1,2 +1,0 @@
-# CleaningData
-HumanActivityRecognitionUsingSmartphones
