@@ -30,85 +30,86 @@ Custom function to map activity id to activity description
  - **mean_grouped_by_subject_and_activity** - Averages grouped by subject and activity
 
 ## Measurements
-tBodyAccMeanX
-tBodyAccMeanY
-tBodyAccMeanZ
-tBodyAccStandardDeviationX
-tBodyAccStandardDeviationY
-tBodyAccStandardDeviationZ
-tGravityAccMeanX
-tGravityAccMeanY
-tGravityAccMeanZ
-tGravityAccStandardDeviationX
-tGravityAccStandardDeviationY
-tGravityAccStandardDeviationZ
-tBodyAccJerkMeanX
-tBodyAccJerkMeanY
-tBodyAccJerkMeanZ
-tBodyAccJerkStandardDeviationX
-tBodyAccJerkStandardDeviationY
-tBodyAccJerkStandardDeviationZ
-tBodyGyroMeanX
-tBodyGyroMeanY
-tBodyGyroMeanZ
-tBodyGyroStandardDeviationX
-tBodyGyroStandardDeviationY
-tBodyGyroStandardDeviationZ
-tBodyGyroJerkMeanX
-tBodyGyroJerkMeanY
-tBodyGyroJerkMeanZ
-tBodyGyroJerkStandardDeviationX
-tBodyGyroJerkStandardDeviationY
-tBodyGyroJerkStandardDeviationZ
-tBodyAccMagMean
-tBodyAccMagStandardDeviation
-tGravityAccMagMean
-tGravityAccMagStandardDeviation
-tBodyAccJerkMagMean
-tBodyAccJerkMagStandardDeviation
-tBodyGyroMagMean
-tBodyGyroMagStandardDeviation
-tBodyGyroJerkMagMean
-tBodyGyroJerkMagStandardDeviation
-fBodyAccMeanX
-fBodyAccMeanY
-fBodyAccMeanZ
-fBodyAccStandardDeviationX
-fBodyAccStandardDeviationY
-fBodyAccStandardDeviationZ
-fBodyAccMeanFreqX
-fBodyAccMeanFreqY
-fBodyAccMeanFreqZ
-fBodyAccJerkMeanX
-fBodyAccJerkMeanY
-fBodyAccJerkMeanZ
-fBodyAccJerkStandardDeviationX
-fBodyAccJerkStandardDeviationY
-fBodyAccJerkStandardDeviationZ
-fBodyAccJerkMeanFreqX
-fBodyAccJerkMeanFreqY
-fBodyAccJerkMeanFreqZ
-fBodyGyroMeanX
-fBodyGyroMeanY
-fBodyGyroMeanZ
-fBodyGyroStandardDeviationX
-fBodyGyroStandardDeviationY
-fBodyGyroStandardDeviationZ
-fBodyGyroMeanFreqX
-fBodyGyroMeanFreqY
-fBodyGyroMeanFreqZ
-fBodyAccMagMean
-fBodyAccMagStandardDeviation
-fBodyAccMagMeanFreq
-fBodyBodyAccJerkMagMean
-fBodyBodyAccJerkMagStandardDeviation
-fBodyBodyAccJerkMagMeanFreq
-fBodyBodyGyroMagMean
-fBodyBodyGyroMagStandardDeviation
-fBodyBodyGyroMagMeanFreq
-fBodyBodyGyroJerkMagMean
-fBodyBodyGyroJerkMagStandardDeviation
-fBodyBodyGyroJerkMagMeanFreq
+- tBodyAccMeanX
+- tBodyAccMeanY
+- tBodyAccMeanZ
+- tBodyAccStandardDeviationX
+- tBodyAccStandardDeviationY
+- tBodyAccStandardDeviationZ
+- tGravityAccMeanX
+- tGravityAccMeanY
+- tGravityAccMeanZ
+- tGravityAccStandardDeviationX
+- tGravityAccStandardDeviationY
+- tGravityAccStandardDeviationZ
+- tBodyAccJerkMeanX
+- tBodyAccJerkMeanY
+- tBodyAccJerkMeanZ
+- tBodyAccJerkStandardDeviationX
+- tBodyAccJerkStandardDeviationY
+- tBodyAccJerkStandardDeviationZ
+- tBodyGyroMeanX
+- tBodyGyroMeanY
+- tBodyGyroMeanZ
+- tBodyGyroStandardDeviationX
+- tBodyGyroStandardDeviationY
+- tBodyGyroStandardDeviationZ
+- tBodyGyroJerkMeanX
+- tBodyGyroJerkMeanY
+- tBodyGyroJerkMeanZ
+- tBodyGyroJerkStandardDeviationX
+- tBodyGyroJerkStandardDeviationY
+- tBodyGyroJerkStandardDeviationZ
+- tBodyAccMagMean
+- tBodyAccMagStandardDeviation
+- tGravityAccMagMean
+- tGravityAccMagStandardDeviation
+- tBodyAccJerkMagMean
+- tBodyAccJerkMagStandardDeviation
+- tBodyGyroMagMean
+- tBodyGyroMagStandardDeviation
+- tBodyGyroJerkMagMean
+- tBodyGyroJerkMagStandardDeviation
+- fBodyAccMeanX
+- fBodyAccMeanY
+- fBodyAccMeanZ
+- fBodyAccStandardDeviationX
+- fBodyAccStandardDeviationY
+- fBodyAccStandardDeviationZ
+- fBodyAccMeanFreqX
+- fBodyAccMeanFreqY
+- fBodyAccMeanFreqZ
+- fBodyAccJerkMeanX
+- fBodyAccJerkMeanY
+- fBodyAccJerkMeanZ
+- fBodyAccJerkStandardDeviationX
+- fBodyAccJerkStandardDeviationY
+- fBodyAccJerkStandardDeviationZ
+- fBodyAccJerkMeanFreqX
+- fBodyAccJerkMeanFreqY
+- fBodyAccJerkMeanFreqZ
+- fBodyGyroMeanX
+- fBodyGyroMeanY
+- fBodyGyroMeanZ
+- fBodyGyroStandardDeviationX
+- fBodyGyroStandardDeviationY
+- fBodyGyroStandardDeviationZ
+- fBodyGyroMeanFreqX
+- fBodyGyroMeanFreqY
+- fBodyGyroMeanFreqZ
+- fBodyAccMagMean
+- fBodyAccMagStandardDeviation
+- fBodyAccMagMeanFreq
+- fBodyBodyAccJerkMagMean
+- fBodyBodyAccJerkMagStandardDeviation
+- fBodyBodyAccJerkMagMeanFreq
+- fBodyBodyGyroMagMean
+- fBodyBodyGyroMagStandardDeviation
+- fBodyBodyGyroMagMeanFreq
+- fBodyBodyGyroJerkMagMean
+- fBodyBodyGyroJerkMagStandardDeviation
+- fBodyBodyGyroJerkMagMeanFreq
+
 
 ## Result
 A file called tidy.txt will be produced at the end of this script which calculates the average of each variable for each activity and each subject.
