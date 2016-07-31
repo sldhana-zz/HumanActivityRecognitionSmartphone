@@ -19,10 +19,10 @@ get_source_data()
 
 # measurements labels
 data.measurement_labels <- read.table('./data_source/UCI HAR Dataset/features.txt',
-                                     col.names=c("Id", "Type"))
+                                      col.names=c("Id", "Type"))
 #activity labels
 data.activity_labels <- read.table('./data_source/UCI HAR Dataset/activity_labels.txt',
-                                      col.names=c("Id", "Type"))
+                                   col.names=c("Id", "Type"))
 
 # read training data set
 data.train.x <- read.table('./data_source/UCI HAR Dataset/train/X_train.txt',
@@ -52,7 +52,7 @@ data.test.y <- read.table('./data_source/UCI HAR Dataset/test/y_test.txt',
 
 # test subjectId
 data.test.subject <- read.table('./data_source/UCI HAR Dataset/test/subject_test.txt', 
-                                 col.names=c("subjectId"))
+                                col.names=c("subjectId"))
 
 # create a mapping between activityId and the descriptive name
 data.test.activity = mapply(get_activity_name, data.test.y$Id)
@@ -68,9 +68,9 @@ data.combined <- rbind(data.train, data.test)
 
 # extract only mean and std columns, reorder it
 data.mean_and_std <- cbind(
-                      data.combined$subjectId,
-                      data.combined$activity,
-                      data.combined[grep('mean|std', data.measurement_labels$Type)])
+  data.combined$subjectId,
+  data.combined$activity,
+  data.combined[grep('mean|std', data.measurement_labels$Type)])
 setnames(data.mean_and_std, 
          old=c('data.combined$subjectId', 'data.combined$activity'),
          new=c('subjectId', 'activity'))
@@ -86,3 +86,4 @@ names(data.mean_and_std) <- gsub("BodyBody", "Body", names(data.mean_and_std))
 # get the average of each variable for each activity and each subject.
 mean_grouped_by_subject_and_activity <-  aggregate(. ~subjectId + activity, data.mean_and_std, mean)
 write.table(mean_grouped_by_subject_and_activity, file="tidy.txt")
+mean_grouped_by_subject_and_activity
