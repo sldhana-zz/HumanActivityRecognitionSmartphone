@@ -70,7 +70,7 @@ data.combined <- rbind(data.train, data.test)
 data.mean_and_std <- cbind(
   data.combined$subjectId,
   data.combined$activity,
-  data.combined[grep('mean|std', data.measurement_labels$Type)])
+  data.combined[grep('mean|std', data.measurement_labels$Type, ignore.case = TRUE)])
 setnames(data.mean_and_std, 
          old=c('data.combined$subjectId', 'data.combined$activity'),
          new=c('subjectId', 'activity'))
